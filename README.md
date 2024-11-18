@@ -3,11 +3,17 @@ In this project, we implement a convolutional neural network to classify images 
 
 ## The Dataset
 
-Our data set consists of 6499 RGB images of size 224 x 224, each of which depicts a butterfly of one of 75 possible species.
+Our data set consists of 6499 RGB images of size 224 x 224, each of which depicts a butterfly of one of 75 possible species. We can see a few of our images together with their species label below.
+
+![A few images from out dataset](plots/sample_images.png)
 
 ## Data Augmentation
 
-In order to optimize the performance of our image classifier, we apply data augmentation techniques. More precisely, during our training, we apply a variety of geometric transformations to our input images before passing them through the model. This has the effect of artificially increasing the size of our training set. This improves the ability of our model to accurately predict the species of previously unseen images. 
+In order to optimize the performance of our image classifier, we apply data augmentation techniques. More precisely, during our training, we apply a variety of geometric transformations to our input images before passing them through the model. The effect of these transformations can be seen for a few images below.
+
+![Original and augmented images](plots/augmented_images.png)
+
+This has the effect of artificially increasing the size of our training set. This improves the ability of our model to accurately predict the species of previously unseen images. 
 
 ## Constructing and Training our Model
 
@@ -26,4 +32,15 @@ After constructing our model, we train our model on our training set of 5199 lab
 
 We achieve an accuracy of about 83% on our testing set. The predictions from our training set can be visualized in the following confusion matrix.
 
-We see that most of our models errors occur for a few species. For instance, our model often confuses the species 'Eastern Marble' and 'Question Mark', as well as the species 'Large Marble' and 'Eastern Dapple White'. By taking a look at images of these species, we see that these are nearly indisinguishable to the non-expert. 
+![Confusion matrix](plots/confusion_matrix.png)
+
+We see that most of our models errors occur for a few species. For instance, our model often confuses the species 'Eastern Coma' and 'Question Mark', as well as the species 'Large Marble' and 'Eastern Dapple White'. By taking a look at images of these species, we see that these are nearly indisinguishable to the non-expert. 
+
+!['Eastern Marble' versus 'Question mark'](plots/eastern_coma_question_mark_comparison.png)
+
+!['Large Marble' versus 'Eastern Dapple White'](plots/large_marble_eastern_dapple_white_comparison.png)
+
+
+
+
+
