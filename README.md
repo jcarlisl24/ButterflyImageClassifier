@@ -38,7 +38,7 @@ We achieve an accuracy of about 83% on our testing set. The predictions from our
 
 We see that most of our models errors occur for a few species. For instance, our model often confuses the species 'Eastern Coma' and 'Question Mark', as well as the species 'Large Marble' and 'Eastern Dapple White'. By taking a look at images of these species, we see that these are nearly indisinguishable to the non-expert. 
 
-!['Eastern Marble' versus 'Question mark'](plots/eastern_coma_question_mark_comparison.png)
+!['Eastern Marble' versus 'Question mark'](eastern_coma_question_mark_comparison.png)
 
 !['Large Marble' versus 'Eastern Dapple White'](plots/large_marble_eastern_dapple_white_comparison.png)
 
