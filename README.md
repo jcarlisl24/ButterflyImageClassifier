@@ -24,7 +24,9 @@ We implement a convolutional neural network consisting of 8 convolutional layers
 3. A (non-linear) activation function, namely the rectified linear unit ReLU, which acts by x -> max(x,0).
 4. Finally, we apply a 2-dimensional maxpool, which reduces the outputs image by a factor of 2 in each dimension. Doing this allows us to capture both large and small scale patters in the images. 
 
-Passing a 3 x 224 x 224 image tensor through these first 8 layers produces a 1-dimensional output tensor of length 512. We use a fully connected layer at the end to convert this tensor of length 512 to a tensor of length 75, corresponding to the 75 possible species. 
+Passing a 3 x 224 x 224 image tensor through these first 8 layers produces a 1-dimensional output tensor of length 512. We use a fully connected layer at the end to convert this tensor of length 512 to a tensor of length 75, corresponding to the 75 possible species. We depict our network architecture in the following diagram.
+
+![](plots/network_architecture.png)
 
 After constructing our model, we train our model on our training set of 5199 labelled butterfly images, for 100 epochs. 
 
